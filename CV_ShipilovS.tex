@@ -1,0 +1,210 @@
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english, russian]{babel}
+\usepackage{tabularx}
+\usepackage{indentfirst}
+\setlength{\parindent}{1cm}
+
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Шипилов Степан} \\ \vspace{1pt}
+    \small +7 925 037 31 45 $|$ \href{mailto:stive.shipilov@yandex}{\underline{stive.shipilov@yandex}} $|$ 
+    \href{https://t.me/stivek11}{\underline{stivek11}} $|$
+    \href{https://github.com/stive-shipilov}{\underline{github.com/stive-shipilov}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Образование}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {МФТИ - Московский физико-технический университет}{Москва}
+    {Физтех-школа радиотехники и комьютерных технологий}{2023 -- 2027 $|$ 2 курс $|$ GPA: 9.1/10}
+\resumeSubHeadingListEnd
+
+\vspace*{-3mm} % Уменьшение вертикального отступа между блоками
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Основные курсы:}{}
+    {\parbox{0.8\textwidth}{Математический Анализ, Линейная Алгебра, Теория Вероятности, 
+    Дифференциальные уравнения, Базы данных и SQL, Информатика, Физика}}{}
+\resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Проекты}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Библиотека для обработки данных физического эксперимента} {\color{blue}\href{https://github.com/stive-shipilov/ML-and-statistic-for-phisic-experiment}{[GitHub]}} $|$ \emph{Python, Pandas, Numpy, SciPy}}
+          
+          \resumeItemListStart
+            \resumeItem{Была разработана библиотека на Python для автоматизированной обработки данных экспериментов.}
+            \resumeItem{Реализованы продвинутые методы регрессионного анализа для линейных и сложных функций.}
+            \resumeItem{Была добавлена визуализация результатов для наглядного представления данных.}
+          \resumeItemListEnd
+    \resumeProjectHeading
+          {\textbf{Исследование методов линейных регрессий} 
+          {\color{blue}\href{https://github.com/stive-shipilov/Statistical-methods-research}{[GitHub]}} $|$ \emph{Latex, Python, MatPlotLib, Git}}
+          
+          \resumeItemListStart
+            \resumeItem{Было проведено исследование различных методов линейных регрессий с оценкой их эффективности в разных сценариях.}
+            \resumeItem{Написал доклад, в котором рассмотрел применения различных методов регрессионного анализа, их плюсы и минусы.}
+          \resumeItemListEnd
+    \resumeProjectHeading
+          {\textbf{База данных института} 
+          {\color{blue}\href{https://github.com/stive-shipilov/-University-database-design}{[GitHub]}} $|$ \emph{SQL, Git}}
+          
+          \resumeItemListStart
+            \resumeItem{Спроектировал схему базы данных для хранения ключевых данных о деятельности учебного заведения, его работников и студентов}
+            \resumeItem{База данных находится в 3НФ и поддерживает дальнешую масштабируемость}            
+            \resumeItem{Написал тестовые SQL запросы для демонстрации работоспособности базы данных}
+            
+          \resumeItemListEnd
+    \resumeProjectHeading
+          {\textbf{Автоматизированная обработка физического эксперимента. VBA} {\color{blue}\href{https://github.com/stive-shipilov/VBA-experiment-processing}{[GitHub]}}  $|$ \emph{VBA, Excel, Git}}
+          
+          \resumeItemListStart
+            \resumeItem{Реализовал приложение на языке макросов Excel, позволяющее обрабатывать большие массивы однотипных данных}
+            \resumeItem{Реализовал удобный и быстрый подсчёт погрешности величины, представляющей собой суперпозицию разных величин}
+            \resumeItem{Создал удобный интерфейс для взаимодействия с приложением}
+          \resumeItemListEnd
+    \resumeProjectHeading
+          {\textbf{Аналитика данных на SQL} {\color{blue}\href{https://github.com/stive-shipilov/SQL-projects}{[GitHub]}}  $|$ \emph{SQL, Git}}
+          
+          \resumeItemListStart
+            \resumeItem{Включает три модуля: работу с матрицами, анализ парковочных данных и исследование покупательской активности.}
+            \resumeItem{Реализованы сложные SQL-запросы для обработки, анализа и оптимизации данных, включая математические вычисления, управление парковками и аналитику покупок.}
+            \resumeItem{Проект демонстрирует применение SQL в реальных сценариях: от математических операций до бизнес-аналитики.}
+          \resumeItemListEnd
+    % \resumeProjectHeading
+    %       {\textbf{Автоматическое создание расписания на месяц. VBA} {\color{blue}\href{https://github.com/stive-shipilov/Automated-calendar}{[GitHub]}} $|$ \emph{VBA, Excel, Git}}
+          
+    %       \resumeItemListStart
+    %         \resumeItem{Было реализовано автоматизированное создание расписания на VBA, позволяющее формировать расписание на месяц на основе введённых дат и времени работы..}
+    %         \resumeItem{Была обеспечена гибкость и автоматизация процесса планирования с использованием макросов Excel (.xlsm), что исключает рутинные операции.}
+    %       \resumeItemListEnd
+    \resumeProjectHeading
+          {\textbf{Автоматическое создание графиков на Python} {\color{blue}\href{https://github.com/stive-shipilov/Graphics-creating}{[GitHub]}}  $|$ \emph{Python, Pandas, Numpy, SciPy, Git}}
+          
+          \resumeItemListStart
+            \resumeItem{Было реализовано построение графиков на основе CSV-данных с использованием Matplotlib.}
+            \resumeItem{Была разработана обработка данных с фильтрацией, отображением погрешностей и аппроксимацией.}
+            \resumeItem{Была обеспечена удобная визуализация с легендами, подписями осей и автоматическим выводом таблиц.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+    
+
+%
+%-----------О СЕБЕ-----------
+\section{О себе}
+
+\hspace{1cm}Учась в школе, я участвовал в инженерных олимпиадах, стал призёром в олимпиаде "Инженеры будущего" и "Курчатовcкий проект" :
+
+\hspace{1cm}В ходе обучения на физтехе я развил навыки работы в условиях строгих сроков и дедлайнов, научился эффективно планировать свою работу и достигать поставленных целей в установленное время. Я привык решать сложные задачи, адаптируясь под новые требования и подходы, что позволяет мне успешно справляться с вызовами. Также активно участвовал в мозговых штурмах, где учился работать в команде и искать нестандартные решения для различных проблем."
+
+
+
+%-------------------------------------------
+\end{document}
